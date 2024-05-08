@@ -1,17 +1,17 @@
-import 'package:fpdart/fpdart.dart';
-import 'package:kyons_flutter/src/user/data/package_dto.dart';
-import 'package:kyons_flutter/src/user/data/transaction_dto.dart';
-import 'package:kyons_flutter/src/user/domain/inventory.dart';
-import 'package:kyons_flutter/src/user/domain/package.dart';
-import 'package:kyons_flutter/src/user/domain/transaction.dart';
+import 'package:shared_package/shared_libs.dart';
 
 import '../../core/data/api.dart';
 // import '../../core/data/apiService.api.dart';
 import '../domain/balance.dart';
 // import '../domain/i_order_apiService.api.dart';
 import '../domain/i_order_api.dart';
+import '../domain/inventory.dart';
+import '../domain/package.dart';
+import '../domain/transaction.dart';
 import 'inventory_dto.dart';
 import 'order_dto.dart';
+import 'package_dto.dart';
+import 'transaction_dto.dart';
 
 class OrderApi implements IOrderApi {
   final Api apiService;

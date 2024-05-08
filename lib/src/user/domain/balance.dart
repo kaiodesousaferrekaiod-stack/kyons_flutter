@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:kyons_flutter/src/core/helper/translate.dart';
+import '../../core/helper/translate.dart';
 
 class Balance {
   final int value;

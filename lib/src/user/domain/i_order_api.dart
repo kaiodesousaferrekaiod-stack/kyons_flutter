@@ -1,9 +1,9 @@
-import 'package:fpdart/fpdart.dart';
-import 'package:kyons_flutter/src/user/domain/balance.dart';
-import 'package:kyons_flutter/src/user/domain/transaction.dart';
+import 'package:shared_package/shared_libs.dart';
 
+import 'balance.dart';
 import 'inventory.dart';
 import 'package.dart';
+import 'transaction.dart';
 
 abstract class IOrderApi {
   Future<Unit> getFreeTrial();

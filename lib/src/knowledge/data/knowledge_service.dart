@@ -1,15 +1,14 @@
 import 'dart:convert';
 import 'dart:developer';
 
-import 'package:fpdart/fpdart.dart';
-import 'package:kyons_flutter/src/test_knowledge/data/test_entities.dart';
+import 'package:shared_package/shared_libs.dart';
 import 'package:shared_package/shared_package.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/data/api.dart';
 import '../../knowledge/data/knowledge_dto.dart';
 import '../../knowledge/data/knowledge_entities.dart';
 import '../../knowledge/domain/i_knowledge.dart';
+import '../../test_knowledge/data/test_entities.dart';
 import '../../test_knowledge/data/test_knowledge_dto.dart';
 
 part 'knowledge_service.fp.dart';

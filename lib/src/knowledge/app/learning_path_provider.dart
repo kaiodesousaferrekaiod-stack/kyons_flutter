@@ -1,14 +1,12 @@
 import 'dart:async';
 
-import 'package:fpdart/fpdart.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:kyons_flutter/src/test_knowledge/data/test_entities.dart';
+import 'package:shared_package/shared_libs.dart';
 import 'package:shared_package/shared_package.dart';
 
 import '../../knowledge/app/knowledge_provider.dart';
 import '../../knowledge/data/knowledge_entities.dart';
 import '../../knowledge/domain/i_knowledge.dart';
+import '../../test_knowledge/data/test_entities.dart';
 import '../data/knowledge_service.dart' as knowledge_service;
 
 part 'learning_path_provider.freezed.dart';

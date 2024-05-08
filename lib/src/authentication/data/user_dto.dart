@@ -1,5 +1,4 @@
-import 'package:fpdart/fpdart.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:shared_package/shared_libs.dart';
 
 import '../../knowledge/domain/i_knowledge.dart';
 import 'auth_entities.dart';

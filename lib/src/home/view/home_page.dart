@@ -1,10 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:fpdart/fpdart.dart';
-import 'package:go_router/go_router.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:kyons_flutter/src/navigation/view/top_menu.dart';
+import 'package:shared_package/shared_libs.dart';
 import 'package:shared_package/shared_package.dart';
 
 import '../../core/helper/translate.dart';
@@ -13,6 +10,7 @@ import '../../core/view/widgets/large_btn.dart';
 import '../../knowledge/data/knowledge_entities.dart';
 import '../../navigation/domain/app_paths.dart';
 import '../../navigation/view/app_drawer.dart';
+import '../../navigation/view/top_menu.dart';
 import '../app/home_provider.dart';
 import 'attributes_widget.dart';
 

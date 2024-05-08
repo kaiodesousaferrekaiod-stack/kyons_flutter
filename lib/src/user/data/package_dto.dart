@@ -1,5 +1,4 @@
-// freezed class PackageDto with fromJson and toDomain
-import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:shared_package/shared_libs.dart';
 
 import '../domain/package.dart';
 
@@ -40,7 +39,7 @@ class DiscountDto with _$DiscountDto {
   const factory DiscountDto({
     @JsonKey(name: 'discount_type', unknownEnumValue: DiscountType.amount)
     @JsonEnum(fieldRename: FieldRename.snake)
-        required DiscountType type,
+    required DiscountType type,
     @JsonKey(name: 'discount_amount', defaultValue: '0.0') required String amount,
   }) = _DiscountDto;
   // fromJson

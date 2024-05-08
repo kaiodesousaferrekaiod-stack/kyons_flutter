@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:fpdart/fpdart.dart';
-import 'package:go_router/go_router.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:shared_package/shared_libs.dart';
 import 'package:shared_package/shared_package.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../../boostrap/config_reader.dart';
 import '../../../../core/helper/translate.dart';

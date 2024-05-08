@@ -1,9 +1,9 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:kyons_flutter/src/test_knowledge/data/test_entities.dart';
+import 'package:shared_package/shared_libs.dart';
 
 import '../../knowledge/data/knowledge_dto.dart';
 import '../../test_knowledge/data/test_knowledge.dart';
 import '../domain/i_test_knowledge.dart';
+import 'test_entities.dart';
 
 part 'test_knowledge_dto.freezed.dart';
 part 'test_knowledge_dto.g.dart';

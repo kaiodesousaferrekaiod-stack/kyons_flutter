@@ -2,8 +2,7 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:logging/logging.dart';
+import 'package:shared_package/shared_libs.dart';
 
 import '../src/authentication/app/auth_provider.dart';
 import '../src/navigation/app/router.dart';

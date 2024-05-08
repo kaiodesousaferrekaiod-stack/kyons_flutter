@@ -8,7 +8,7 @@ part of 'test_knowledge_dto.dart';
 
 _$TestContentDtoImpl _$$TestContentDtoImplFromJson(Map<String, dynamic> json) =>
     _$TestContentDtoImpl(
-      id: json['test_id'] as int? ?? 0,
+      id: (json['test_id'] as num?)?.toInt() ?? 0,
       questions: (json['data'] as List<dynamic>?)
               ?.map((e) => e as Map<String, dynamic>)
               .toList() ??
@@ -26,18 +26,18 @@ Map<String, dynamic> _$$TestContentDtoImplToJson(
 
 _$QuestionDtoImpl _$$QuestionDtoImplFromJson(Map<String, dynamic> json) =>
     _$QuestionDtoImpl(
-      id: json['id'] as int,
+      id: (json['id'] as num).toInt(),
       content: json['content'] as String,
       answers: (json['answer_keys'] as List<dynamic>)
           .map((e) => e as Map<String, dynamic>)
           .toList(),
       learningPointDifficultyId:
-          json['learning_point_difficulty_id'] as int? ?? 0,
-      difficultyLevel: json['difficulty_level'] as int? ?? 0,
-      learningPointId: json['learning_point_id'] as int? ?? 0,
-      topicId: json['topic_id'] as int? ?? 0,
+          (json['learning_point_difficulty_id'] as num?)?.toInt() ?? 0,
+      difficultyLevel: (json['difficulty_level'] as num?)?.toInt() ?? 0,
+      learningPointId: (json['learning_point_id'] as num?)?.toInt() ?? 0,
+      topicId: (json['topic_id'] as num?)?.toInt() ?? 0,
       topicName: json['topic_name'] as String? ?? '',
-      categoryId: json['category_id'] as int? ?? 0,
+      categoryId: (json['category_id'] as num?)?.toInt() ?? 0,
       categoryName: json['category_name'] as String? ?? '',
     );
 
@@ -57,9 +57,9 @@ Map<String, dynamic> _$$QuestionDtoImplToJson(_$QuestionDtoImpl instance) =>
 
 _$AnswerDtoImpl _$$AnswerDtoImplFromJson(Map<String, dynamic> json) =>
     _$AnswerDtoImpl(
-      id: json['id'] as int,
+      id: (json['id'] as num).toInt(),
       value: json['value'] as String,
-      order: json['order'] as int? ?? 0,
+      order: (json['order'] as num?)?.toInt() ?? 0,
       isCorrect: json['is_correct'] as bool? ?? false,
       content: json['content'] as String,
     );
@@ -76,10 +76,10 @@ Map<String, dynamic> _$$AnswerDtoImplToJson(_$AnswerDtoImpl instance) =>
 _$AnswerResultDtoImpl _$$AnswerResultDtoImplFromJson(
         Map<String, dynamic> json) =>
     _$AnswerResultDtoImpl(
-      topicId: json['topic_id'] as int,
-      categoryId: json['category_id'] as int,
-      questionId: json['question_id'] as int,
-      score: json['score'] as int,
+      topicId: (json['topic_id'] as num).toInt(),
+      categoryId: (json['category_id'] as num).toInt(),
+      questionId: (json['question_id'] as num).toInt(),
+      score: (json['score'] as num).toInt(),
     );
 
 Map<String, dynamic> _$$AnswerResultDtoImplToJson(
@@ -95,10 +95,11 @@ _$AnswerReviewDtoImpl _$$AnswerReviewDtoImplFromJson(
         Map<String, dynamic> json) =>
     _$AnswerReviewDtoImpl(
       selectedAnswers: (json['selected_answer'] as List<dynamic>)
-          .map((e) => e as int)
+          .map((e) => (e as num).toInt())
           .toList(),
-      rightAnswers:
-          (json['right_answer'] as List<dynamic>).map((e) => e as int).toList(),
+      rightAnswers: (json['right_answer'] as List<dynamic>)
+          .map((e) => (e as num).toInt())
+          .toList(),
     );
 
 Map<String, dynamic> _$$AnswerReviewDtoImplToJson(
@@ -131,11 +132,11 @@ Map<String, dynamic> _$$TestResultDtoImplToJson(_$TestResultDtoImpl instance) =>
 _$MockTestItemDtoImpl _$$MockTestItemDtoImplFromJson(
         Map<String, dynamic> json) =>
     _$MockTestItemDtoImpl(
-      id: json['id'] as int,
+      id: (json['id'] as num).toInt(),
       createdDate: json['created_date'] as String,
       status: $enumDecode(_$MockTestStatusEnumMap, json['status']),
       score: (json['score'] as num?)?.toDouble() ?? 0,
-      index: json['index'] as int? ?? 0,
+      index: (json['index'] as num?)?.toInt() ?? 0,
     );
 
 Map<String, dynamic> _$$MockTestItemDtoImplToJson(

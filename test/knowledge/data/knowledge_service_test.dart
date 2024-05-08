@@ -1,15 +1,12 @@
-import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:fpdart/fpdart.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:kyons_flutter/src/core/data/api.dart';
 import 'package:kyons_flutter/src/core/data/shared.dart';
 import 'package:kyons_flutter/src/knowledge/data/knowledge_entities.dart';
 import 'package:kyons_flutter/src/knowledge/data/knowledge_service.dart' as knowledge_service;
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
+import 'package:shared_package/shared_libs.dart';
 import 'package:shared_package/shared_package.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import 'knowledge_service_test.mocks.dart';
 

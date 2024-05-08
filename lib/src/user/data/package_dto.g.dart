@@ -8,11 +8,11 @@ part of 'package_dto.dart';
 
 _$PackageDtoImpl _$$PackageDtoImplFromJson(Map<String, dynamic> json) =>
     _$PackageDtoImpl(
-      id: json['id'] as int,
+      id: (json['id'] as num).toInt(),
       name: json['name'] as String,
       description: json['description'] as String,
       discount: DiscountDto.fromJson(json['discount'] as Map<String, dynamic>),
-      limit: json['limit'] as int? ?? 99,
+      limit: (json['limit'] as num?)?.toInt() ?? 99,
       price: json['price'] as String,
       salePrice: json['sale_price'] as String,
       items: (json['package_items'] as List<dynamic>)
@@ -52,7 +52,7 @@ const _$DiscountTypeEnumMap = {
 
 _$PackageItemDtoImpl _$$PackageItemDtoImplFromJson(Map<String, dynamic> json) =>
     _$PackageItemDtoImpl(
-      id: json['id'] as int,
+      id: (json['id'] as num).toInt(),
       service:
           PackageServiceDto.fromJson(json['service'] as Map<String, dynamic>),
     );
@@ -69,7 +69,7 @@ _$PackageServiceDtoImpl _$$PackageServiceDtoImplFromJson(
     _$PackageServiceDtoImpl(
       name: json['service_type_text'] as String,
       type: $enumDecode(_$PackageServiceTypeEnumMap, json['service_type']),
-      amount: json['service_amount'] as int,
+      amount: (json['service_amount'] as num).toInt(),
     );
 
 Map<String, dynamic> _$$PackageServiceDtoImplToJson(

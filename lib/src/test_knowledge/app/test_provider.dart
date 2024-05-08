@@ -1,9 +1,8 @@
-import 'package:dio/dio.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:kyons_flutter/src/core/data/api.dart';
-import 'package:kyons_flutter/src/core/data/shared.dart';
+import 'package:shared_package/shared_libs.dart';
 
 import '../../../boostrap/config_reader.dart';
+import '../../core/data/api.dart';
+import '../../core/data/shared.dart';
 import '../../test_knowledge/data/test_knowledge_api.dart';
 
 final testApi = Provider<TestKnowledge>(

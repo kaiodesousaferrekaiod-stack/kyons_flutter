@@ -1,6 +1,5 @@
-import 'package:fpdart/fpdart.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
+import 'package:shared_package/shared_libs.dart';
 import 'package:shared_package/shared_package.dart';
 
 import '../../data/order_service.dart' as order_service;

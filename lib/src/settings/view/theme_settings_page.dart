@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
-import '../../core/helper/translate.dart';
-import '../../navigation/domain/app_paths.dart';
+import 'package:shared_package/shared_libs.dart';
 import 'package:shared_package/shared_package.dart';
 
+import '../../core/helper/translate.dart';
+import '../../navigation/domain/app_paths.dart';
 import '../app/settings_controller.dart';
 
 /// Displays the various settings that can be customized by the user.

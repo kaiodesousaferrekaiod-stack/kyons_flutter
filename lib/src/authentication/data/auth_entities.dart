@@ -1,8 +1,8 @@
-import 'package:fpdart/fpdart.dart';
-import 'package:kyons_flutter/src/authentication/data/user_dto.dart';
+import 'package:shared_package/shared_libs.dart';
 
 import '../../knowledge/domain/i_knowledge.dart';
 import '../domain/i_user.dart';
+import 'user_dto.dart';
 
 class User implements IUser {
   @override

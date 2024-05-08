@@ -1,4 +1,4 @@
-import 'package:fpdart/fpdart.dart';
+import 'package:shared_package/shared_libs.dart' show Unit, Option;
 
 import '../../authentication/domain/value_objects.dart';
 import '../../knowledge/domain/i_knowledge.dart';

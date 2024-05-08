@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:intl/intl.dart';
+import 'package:shared_package/shared_libs.dart';
 
 AppLocalizations t(context) => AppLocalizations.of(context)!;
 

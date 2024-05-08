@@ -1,8 +1,6 @@
 import 'dart:convert';
 
-import 'package:fpdart/fpdart.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:uuid/uuid.dart';
+import 'package:shared_package/shared_libs.dart';
 
 import '../../core/data/api.dart';
 import '../../tracking/data/tracking_service.dart' as tracking_service;

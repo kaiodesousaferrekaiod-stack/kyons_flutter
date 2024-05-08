@@ -1,9 +1,6 @@
 import 'dart:convert';
 
-import 'package:dio/dio.dart';
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:fpdart/fpdart.dart';
-import 'package:logging/logging.dart';
+import 'package:shared_package/shared_libs.dart';
 import 'package:shared_package/shared_package.dart';
 
 import '../../authentication/domain/i_auth.dart';
@@ -38,7 +35,7 @@ class AuthApi implements IAuthApi {
     required EmailAddress email,
     required String password,
   }) async {
-    final response = api.post('/auth/sign_in', data: {
+    final response = apiService.api.post('/auth/sign_in', data: {
       'username': email.getValueOrError(),
       'password': password,
     });

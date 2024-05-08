@@ -1,8 +1,7 @@
-import 'package:dio/dio.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:kyons_flutter/src/core/data/shared.dart';
+import 'package:shared_package/shared_libs.dart';
 
 import '../../core/data/api.dart';
+import '../../core/data/shared.dart';
 import '../data/knowledge_service.dart';
 
 final knowledgeApiProvider = Provider<KnowledgeApi>(

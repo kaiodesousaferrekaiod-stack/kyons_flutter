@@ -12,7 +12,7 @@ part of 'test_knowledge_dto.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 TestContentDto _$TestContentDtoFromJson(Map<String, dynamic> json) {
   return _TestContentDto.fromJson(json);
@@ -164,7 +164,7 @@ class _$TestContentDtoImpl extends _TestContentDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$TestContentDtoImpl &&
@@ -496,7 +496,7 @@ class _$QuestionDtoImpl extends _QuestionDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$QuestionDtoImpl &&
@@ -774,7 +774,7 @@ class _$AnswerDtoImpl extends _AnswerDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AnswerDtoImpl &&
@@ -991,7 +991,7 @@ class _$AnswerResultDtoImpl extends _AnswerResultDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AnswerResultDtoImpl &&
@@ -1186,7 +1186,7 @@ class _$AnswerReviewDtoImpl extends _AnswerReviewDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AnswerReviewDtoImpl &&
@@ -1433,7 +1433,7 @@ class _$TestResultDtoImpl extends _TestResultDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$TestResultDtoImpl &&
@@ -1667,7 +1667,7 @@ class _$MockTestItemDtoImpl extends _MockTestItemDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$MockTestItemDtoImpl &&

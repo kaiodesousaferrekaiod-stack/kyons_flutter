@@ -1,5 +1,4 @@
-import 'package:fpdart/fpdart.dart';
-import 'package:intl/intl.dart';
+import 'package:shared_package/shared_libs.dart';
 import 'package:shared_package/shared_package.dart';
 
 import '../../knowledge/data/knowledge_entities.dart';

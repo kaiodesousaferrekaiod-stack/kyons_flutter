@@ -1,11 +1,7 @@
-import 'package:another_flushbar/flushbar.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:go_router/go_router.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:shared_package/shared_libs.dart';
 import 'package:shared_package/shared_package.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../authentication/app/auth_provider.dart';
 import '../../authentication/app/sign_up_provider.dart';
@@ -15,7 +11,7 @@ import '../../navigation/domain/app_paths.dart';
 import '../../settings/view/language_switcher.dart';
 
 class SignUpPage extends ConsumerWidget {
-  const SignUpPage({Key? key}) : super(key: key);
+  const SignUpPage({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -118,7 +114,7 @@ class SignUpForm extends HookConsumerWidget {
         : null;
     final focusHere = useState(false);
     final focusNodePassword = FocusNode();
-    final focusNode = FocusNode();
+    // final focusNode = FocusNode();
 
     return Form(
       key: controller.formKey,

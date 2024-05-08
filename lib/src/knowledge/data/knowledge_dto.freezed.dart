@@ -12,7 +12,7 @@ part of 'knowledge_dto.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 SubjectDto _$SubjectDtoFromJson(Map<String, dynamic> json) {
   return _SubjectDto.fromJson(json);
@@ -161,7 +161,7 @@ class _$SubjectDtoImpl extends _SubjectDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$SubjectDtoImpl &&
@@ -344,7 +344,7 @@ class _$ProgramDtoImpl extends _ProgramDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$ProgramDtoImpl &&
@@ -525,7 +525,7 @@ class _$LessonItemDtoImpl extends _LessonItemDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LessonItemDtoImpl &&
@@ -720,7 +720,7 @@ class _$LearningGoalPathDtoImpl extends _LearningGoalPathDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LearningGoalPathDtoImpl &&
@@ -941,7 +941,7 @@ class _$LearningGoalCategoryDtoImpl extends _LearningGoalCategoryDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LearningGoalCategoryDtoImpl &&
@@ -1118,7 +1118,7 @@ class _$LessonGroupDtoImpl extends _LessonGroupDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LessonGroupDtoImpl &&
@@ -1276,7 +1276,7 @@ class _$CategoryDtoImpl extends _CategoryDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$CategoryDtoImpl &&
@@ -1440,7 +1440,7 @@ class _$TopicDtoImpl extends _TopicDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$TopicDtoImpl &&
@@ -1644,7 +1644,7 @@ class _$LessonInfoDtoImpl extends _LessonInfoDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LessonInfoDtoImpl &&
@@ -1886,7 +1886,7 @@ class _$LessonDtoImpl extends _LessonDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LessonDtoImpl &&
@@ -2131,7 +2131,7 @@ class _$LearningPointDtoImpl extends _LearningPointDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LearningPointDtoImpl &&
@@ -2438,7 +2438,7 @@ class _$LearningGoalDtoImpl extends _LearningGoalDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LearningGoalDtoImpl &&
@@ -2646,7 +2646,7 @@ class _$MockTestTemplateDtoImpl extends _MockTestTemplateDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$MockTestTemplateDtoImpl &&
@@ -2850,7 +2850,7 @@ class _$StudentLearningGoalDtoImpl extends _StudentLearningGoalDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$StudentLearningGoalDtoImpl &&

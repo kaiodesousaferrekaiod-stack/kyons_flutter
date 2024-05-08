@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:go_router/go_router.dart';
+import 'package:shared_package/shared_libs.dart';
 import 'package:shared_package/shared_package.dart';
 
 import '../../../../core/helper/translate.dart';
@@ -13,8 +12,7 @@ class LessonListWidget extends HookWidget {
   final LearningGoalPath learningGoalPath;
   final Function nextCatCallback;
   const LessonListWidget(
-      {required this.learningGoalPath, required this.selectedCatIndex, Key? key, required this.nextCatCallback})
-      : super(key: key);
+      {required this.learningGoalPath, required this.selectedCatIndex, super.key, required this.nextCatCallback});
 
   @override
   Widget build(BuildContext context) {

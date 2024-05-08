@@ -8,7 +8,7 @@ part of 'order_dto.dart';
 
 _$BalanceDtoImpl _$$BalanceDtoImplFromJson(Map<String, dynamic> json) =>
     _$BalanceDtoImpl(
-      value: json['balance'] as int,
+      value: (json['balance'] as num).toInt(),
     );
 
 Map<String, dynamic> _$$BalanceDtoImplToJson(_$BalanceDtoImpl instance) =>

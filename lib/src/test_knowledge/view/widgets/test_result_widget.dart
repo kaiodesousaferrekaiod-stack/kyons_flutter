@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:shared_package/shared_libs.dart';
 import 'package:shared_package/shared_package.dart';
 
 import '../../../core/helper/translate.dart';
@@ -14,13 +14,13 @@ class TestResultWidget extends HookWidget {
   final TestContent testContent;
   final LearningGoal learningGoal;
   const TestResultWidget({
-    Key? key,
+    super.key,
     required this.testResult,
     this.actions,
     required this.lessonGroup,
     required this.testContent,
     required this.learningGoal,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

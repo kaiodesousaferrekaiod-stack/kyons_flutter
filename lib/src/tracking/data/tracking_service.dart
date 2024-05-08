@@ -1,7 +1,8 @@
-import 'package:fpdart/fpdart.dart';
+import 'package:shared_package/shared_libs.dart';
+import 'package:shared_package/shared_package.dart';
+
 import '../../core/data/api.dart';
 import '../../tracking/domain/i_tracking.dart';
-import 'package:shared_package/shared_package.dart';
 
 /// Clear tracking value in SharedPreferences
 Reader<ITracking, Future<Either<ClientFailure, Unit>>> resetTracking() => Reader(

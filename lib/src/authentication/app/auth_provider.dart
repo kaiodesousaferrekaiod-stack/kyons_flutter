@@ -1,15 +1,11 @@
-import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:fpdart/fpdart.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:kyons_flutter/boostrap/config_reader.dart';
-import 'package:kyons_flutter/src/core/data/api.dart';
-import 'package:kyons_flutter/src/core/data/shared.dart';
-import 'package:logging/logging.dart';
+import 'package:shared_package/shared_libs.dart';
 
+import '../../../boostrap/config_reader.dart';
 import '../../authentication/data/auth_service.dart' as auth_service;
 import '../../authentication/domain/i_auth.dart';
+import '../../core/data/api.dart';
+import '../../core/data/shared.dart';
 import '../../knowledge/app/knowledge_provider.dart';
 import '../../knowledge/data/knowledge_service.dart' as knowledge_service;
 import '../../knowledge/domain/i_knowledge.dart';

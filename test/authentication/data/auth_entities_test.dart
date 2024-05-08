@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:fpdart/fpdart.dart';
 import 'package:kyons_flutter/src/authentication/data/auth_entities.dart';
 import 'package:kyons_flutter/src/knowledge/domain/i_knowledge.dart';
+import 'package:shared_package/shared_libs.dart';
 
 void main() {
   group('User', () {

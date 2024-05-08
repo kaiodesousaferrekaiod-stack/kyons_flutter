@@ -1,13 +1,11 @@
 import 'dart:async';
 
-import 'package:dio/dio.dart';
-import 'package:fpdart/fpdart.dart';
-import 'package:kyons_flutter/boostrap/config_reader.dart';
-import 'package:kyons_flutter/src/core/data/shared.dart';
-import 'package:kyons_flutter/src/sandbox/data/sandbox_api.dart';
-import 'package:logging/logging.dart';
+import 'package:shared_package/shared_libs.dart';
 import 'package:shared_package/shared_package.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+
+import '../../../boostrap/config_reader.dart';
+import '../../sandbox/data/sandbox_api.dart';
+import 'shared.dart';
 
 class Api {
   final SharedRefService sharedService;
@@ -71,7 +69,7 @@ class Api {
             options: Options(headers: {'Authorization': 'Bearer $refreshToken'}))
         .catchError((error, stackTrace) {
       _log.shout('getRefreshToken', error, stackTrace);
-      // return true;
+      return error;
     }).then((value) {
       return some(value.data['access_token'] as String);
     }).onError((error, stackTrace) => none());

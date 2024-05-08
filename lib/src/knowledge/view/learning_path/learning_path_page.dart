@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:fpdart/fpdart.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:kyons_flutter/src/knowledge/app/learning_path_provider.dart';
-import 'package:kyons_flutter/src/knowledge/data/knowledge_entities.dart';
+import 'package:shared_package/shared_libs.dart';
 import 'package:shared_package/shared_package.dart';
 
 import '../../../core/view/assets/student_assets.dart';
+import '../../app/learning_path_provider.dart';
+import '../../data/knowledge_entities.dart';
 
 class LearningPathPage extends StatelessWidget {
-  const LearningPathPage({Key? key}) : super(key: key);
+  const LearningPathPage({super.key});
 
   @override
   Widget build(BuildContext context) {

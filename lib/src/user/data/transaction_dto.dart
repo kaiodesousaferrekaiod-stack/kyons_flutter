@@ -1,4 +1,4 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:shared_package/shared_libs.dart';
 
 import '../domain/transaction.dart';
 

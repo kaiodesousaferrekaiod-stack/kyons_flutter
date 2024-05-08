@@ -1,8 +1,9 @@
-import 'package:boxy/flex.dart';
 import 'package:flutter/material.dart';
-import 'package:kyons_flutter/src/core/helper/translate.dart';
-import 'package:kyons_flutter/src/core/view/assets/student_assets.dart';
+import 'package:shared_package/shared_libs.dart';
 import 'package:shared_package/shared_package.dart';
+
+import '../../helper/translate.dart';
+import '../assets/student_assets.dart';
 
 class SignInLayout extends StatelessWidget {
   final Widget body;

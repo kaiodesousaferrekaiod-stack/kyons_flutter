@@ -5,7 +5,7 @@ import '../../navigation/view/app_bar.dart';
 import '../../navigation/view/app_drawer.dart';
 
 class DesignPage extends StatelessWidget {
-  const DesignPage({Key? key}) : super(key: key);
+  const DesignPage({super.key});
 
   @override
   Widget build(BuildContext context) {

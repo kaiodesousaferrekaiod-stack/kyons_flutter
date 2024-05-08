@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:kyons_flutter/src/navigation/domain/app_paths.dart';
+import 'package:shared_package/shared_libs.dart';
 import 'package:shared_package/shared_package.dart';
 
 import '../../core/helper/translate.dart';
+import '../domain/app_paths.dart';
 
 class TopMenuWidget extends ConsumerWidget {
   final int currentIndex;

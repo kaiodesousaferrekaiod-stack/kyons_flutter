@@ -11,8 +11,9 @@
 
 import 'dart:ui';
 
-import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:kyons_flutter/src/core/helper/translate.dart';
+import 'package:shared_package/shared_libs.dart';
+
+import '../../core/helper/translate.dart';
 
 class Package {
   final String id;

@@ -1,16 +1,13 @@
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:fpdart/fpdart.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:kyons_flutter/src/sandbox/data/sandbox_api.dart';
+import 'package:shared_package/shared_libs.dart';
 import 'package:shared_package/shared_package.dart';
 
 import '../../../boostrap/config_reader.dart';
 import '../../authentication/app/auth_provider.dart';
 import '../../authentication/data/auth_service.dart' as auth_service;
 import '../../authentication/domain/value_objects.dart';
+import '../../sandbox/data/sandbox_api.dart';
 import '../data/auth_entities.dart';
 import '../data/auth_service.dart';
 

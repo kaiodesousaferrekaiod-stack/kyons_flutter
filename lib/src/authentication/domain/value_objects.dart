@@ -1,4 +1,4 @@
-import 'package:fpdart/fpdart.dart';
+import 'package:shared_package/shared_libs.dart' show Either;
 import 'package:shared_package/shared_package.dart';
 
 class EmailAddress extends ValueObject<String> {

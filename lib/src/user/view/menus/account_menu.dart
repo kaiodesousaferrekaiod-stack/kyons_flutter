@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:kyons_flutter/src/core/helper/translate.dart';
 import 'package:shared_package/shared_package.dart';
 
+import '../../../core/helper/translate.dart';
 import '../../../navigation/domain/app_paths.dart';
 import 'menu_item.dart';
 

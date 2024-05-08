@@ -12,7 +12,7 @@ part of 'package_dto.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PackageDto _$PackageDtoFromJson(Map<String, dynamic> json) {
   return _PackageDto.fromJson(json);
@@ -253,7 +253,7 @@ class _$PackageDtoImpl extends _PackageDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$PackageDtoImpl &&
@@ -460,7 +460,7 @@ class _$DiscountDtoImpl extends _DiscountDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$DiscountDtoImpl &&
@@ -635,7 +635,7 @@ class _$PackageItemDtoImpl extends _PackageItemDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$PackageItemDtoImpl &&
@@ -828,7 +828,7 @@ class _$PackageServiceDtoImpl extends _PackageServiceDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$PackageServiceDtoImpl &&

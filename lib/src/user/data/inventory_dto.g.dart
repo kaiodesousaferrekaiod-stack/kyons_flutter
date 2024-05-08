@@ -8,7 +8,7 @@ part of 'inventory_dto.dart';
 
 _$InventoryDtoImpl _$$InventoryDtoImplFromJson(Map<String, dynamic> json) =>
     _$InventoryDtoImpl(
-      mockTest: json['mock_test'] as int,
+      mockTest: (json['mock_test'] as num).toInt(),
       subscription: (json['subscription'] as num).toDouble(),
     );
 
